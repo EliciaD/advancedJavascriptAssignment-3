@@ -48,15 +48,11 @@ html
   // -----------------------------
 
   script#home(type="text/template").
-  // handlebars expression {{{content}}}
-  
     <div class="page home">{{{content}}}</div>
-  }
-  }
-  }
+
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">{{{content}}} {{{ body }}}</div>
 
   script#portfolio(type="text/template").
     <div class="page portfolio">{{{content}}}</div>
