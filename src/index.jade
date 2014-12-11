@@ -31,6 +31,8 @@ html
         li: a(href="/portfolio") Portfolio
            
         li: a(href="/contact") Contact
+       
+        li: a(href="/details") details
 
     div.main
   
@@ -66,14 +68,29 @@ html
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
-              <a href="/contact">Learn More >></a>
+              <a href="/deatils">Learn More >></a>
             </div>
           </div>
         {{/each}}
       </div>
     </div>
  
-
+  script#details(type="text/template").
+    <div class="page details">
+      <div id="wrap">
+        {{#each works}}
+          <div class="project">
+            <img src="{{image}}" class="projectImg">
+            <div class="projDesc">
+              <h2>{{title}}</h2>
+              <p>{{desc}}</p>
+              <a href="/details">Learn More >></a>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+ 
   script#contact(type="text/template").
     <div class="page contact">
      <div id="wrap2">

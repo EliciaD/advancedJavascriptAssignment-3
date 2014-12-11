@@ -16,7 +16,8 @@ jQuery(function($) {
       '' : 'home',
       'about': 'about',
       'portfolio': 'portfolio',
-      'contact': 'contact'
+      'contact': 'contact',
+      'details': 'details',
     },
 
     // Home Route
@@ -35,13 +36,19 @@ jQuery(function($) {
       console.log('Navigating to Portfolio Page');
       App.views['portfolio'].render();
     },
-
+    // Portfolio Route
+        details: function() {
+          console.log('Navigating to Portfolio Page');
+          App.views['details'].render();
+        },
 
     // Contact Route
     contact: function() {
       console.log('Navigating to Contact Page');
       App.views['contact'].render();
-    }
+    },
+
+   
 
   });
 
@@ -59,7 +66,9 @@ jQuery(function($) {
       home: new HomeView(),
       about: new AboutView(),
       portfolio: new PortfolioView(),
-      contact: new ContactView()
+        details: new detailsView(),
+      contact: new ContactView(),
+    
     };
 
   };
@@ -106,7 +115,7 @@ jQuery(function($) {
   });
 
 // -----------------------------
-  // Portfolio View
+  // About View
   // -----------------------------
 
   var AboutView = Backbone.View.extend({
@@ -157,6 +166,51 @@ jQuery(function($) {
 
     // Our template ID
     template: '#portfolio',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+     
+      works: [
+          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation and User Testing', image:'assets/images/northern.png'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
+          {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
+          {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
+        ]
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+// -----------------------------
+  // Details View
+  // -----------------------------
+
+  var detailsView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#details',
 
     // Initialize View
     initialize: function() {
