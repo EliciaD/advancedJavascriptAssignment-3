@@ -80,9 +80,8 @@ html
 
   script#contact(type="text/template").
     <div class="page contact">
-    {{{ content }}}
-    {{{ body }}}
-     <form class="email" action="mailer.php" method="post">
+     <div id="wrap2">
+     <form class="email" method="post">
                    
                       <p>Name</p>
                       <input type="text" name="name" />
@@ -92,6 +91,11 @@ html
                       <textarea name="message"></textarea></p>
                       <input class="send" type="submit" value="Send">
                       </form>
+      <div id="contactInfo">
+      {{{ content }}}
+      {{{ body }}}
+     </div>
+     </div>
     </div>
 
   // -----------------------------

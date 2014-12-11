@@ -213,7 +213,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         content: '<p>Hi Everyone,<br>Thank you for checking out my website. Feel free to contact me below in whatever way is most convienent to you. If you want to give advice, share a story, or connect as a professional contact, here is all you need to reach me.<br></br>Sincerely,<br>Elicia Durtnall</p>',
-        body: '<p>cell: 705-627-8288<br>email: eliciadurtnall@gmail.com<br>twitter: @eliciad</p>'
+        body: '<p>cell:<a class="mobile-only" href="tel:705-627-8288">705-627-8288</a><br>email: <a href="mailto:eliciadurtnall@gmail.com?Subject=contact%20from%20website" target="_blank">eliciadurtnall@gmail.com</a><br>twitter:<a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a></p>'
       });
 
     },
