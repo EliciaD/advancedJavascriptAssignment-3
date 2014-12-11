@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "gulp-sass": "*",
-    "gulp-imagemin": "*",
+    "gulp-imagemin": "^2.0.0",
     "gulp-jade": "*",
-    "gulp-rename": "*"
+    "gulp-rename": "*",
+    "gulp-sass": "*"
   }
 }

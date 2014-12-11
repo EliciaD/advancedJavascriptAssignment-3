@@ -7,8 +7,8 @@ var fs        = require('fs');
 var gulp      = require('gulp');
 var sass      = require('gulp-sass');
 var jade      = require('gulp-jade');
-var imagemin  = require('gulp-imagemin');
 var rename    = require('gulp-rename');
+var imagemin  = require('gulp-imagemin');
 
 // ------------------------------------
 // Paths
@@ -50,7 +50,6 @@ gulp.task('styles', function() {
     .pipe(sass({ errLogToConsole: true, sourceComments : 'normal' }))
     .pipe(rename('main.css'))
     .pipe(gulp.dest('./public/assets/styles/'))
-
 });
 
 // ------------------------------------
@@ -66,7 +65,7 @@ gulp.task('scripts', function() {
 
 // ------------------------------------
 // Images Task
-// ------------------------------------
+// // ------------------------------------
 
 gulp.task('images', function() {
 
@@ -75,6 +74,17 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./public/assets/images/'))
 
 });
+
+
+
+// gulp.task('images', function () {
+//     return gulp.src('./src/assets/images/*.*')
+//         .pipe(imagemin({
+//             progressive: true,
+//             svgoPlugins: [{removeViewBox: false}]
+//         }))
+//         .pipe(gulp.dest('./public/assets/images/'));
+// });
 
 // ------------------------------------
 // Templates Task
@@ -87,5 +97,3 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('./public/'))
 
 });
-
-

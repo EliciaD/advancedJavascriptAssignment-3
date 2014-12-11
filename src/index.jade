@@ -20,7 +20,7 @@ html
   div.wrapper
 
      header.header
-     
+      img(src='assets/images/logo.png')
 
       ul.nav
 
@@ -52,7 +52,11 @@ html
 
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}} {{{ body }}}</div>
+    <div class="page about">
+      <img src="{{{image}}}"/>
+      {{{content}}} 
+      {{{ body }}}  
+    </div>
 
   script#portfolio(type="text/template").
     <div class="page portfolio">{{{content}}}</div>
