@@ -128,22 +128,25 @@ a {
       margin: 5px;
       margin-bottom: 10px;
       height: 500px; }
-      /* line 132, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+      /* line 131, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+      .main .portfolio #wrap .project a {
+        color: #3498db; }
+      /* line 133, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
       .main .portfolio #wrap .project img {
         margin: auto;
         width: 279px; }
 
-/* line 141, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 142, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .intro {
   width: 450px;
   text-align: center;
   padding: 20px;
   margin: auto; }
 
-/* line 148, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 149, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 151, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 152, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;

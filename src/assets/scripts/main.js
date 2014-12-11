@@ -127,7 +127,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
        
-        body: '<p>Hi, my name is Elicia Durtnall<br></br>I aspire to be a UX Designer. I am currently in my last year at Humber College for web design and interactive media. Send me a <a href="mailto:eliciadurtnall@gmail.com?Subject=Website%20Contact" target="">message</a> if you would like to chat or give me a follow on twitter <a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a>. I look forward to hearing from you!</p>',
+        body: '<p>Hi, my name is Elicia Durtnall<br></br>I aspire to be a UX Designer. I am currently in my last year at Humber College for web design and interactive media. Send me a <a href="/contact">message</a> if you would like to chat or give me a follow on twitter <a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a>. I look forward to hearing from you!</p>',
         image: 'assets/images/elicia_durtnall.png'
       });
 
