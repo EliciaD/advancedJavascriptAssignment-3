@@ -1,4 +1,7 @@
 # Single Page Application Boilerplate
+#Tech Used
+Jade - Clean, and minimal
+Sass - I wanted to challenge myself to not just use css
 
 ## Installation
 
