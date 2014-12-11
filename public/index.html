@@ -32,14 +32,19 @@
   <!-- Templates-->
   <!-- ------------------------------->
   <script id="home" type="text/template">
-    <div class="page home">{{{content}}}</div>
+    <div class="page home"> 
+    <div class="bg" style="background-image:{{image}}">
+    {{{content}}}
+    </div></div>
     
     
   </script>
   <script id="about" type="text/template">
     <div class="page about">
+    <div id="greeting">
       <img src="{{{image}}}"/>
       {{{ body }}}  
+    </div>
     </div>
     
   </script>
@@ -61,7 +66,20 @@
     
   </script>
   <script id="contact" type="text/template">
-    <div class="page contact"></div>
+    <div class="page contact">
+    {{{ content }}}
+    {{{ body }}}
+     <form class="email" action="mailer.php" method="post">
+                   
+                      <p>Name</p>
+                      <input type="text" name="name" />
+                      <p>Email</p>
+                      <input type="text" name="email" />
+                      <p>Message</p>
+                      <textarea name="message"></textarea></p>
+                      <input class="send" type="submit" value="Send">
+                      </form>
+    </div>
     
   </script>
   <!-- ------------------------------->

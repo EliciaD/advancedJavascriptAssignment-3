@@ -56,27 +56,38 @@ a {
   border-bottom: 1px solid #efefef;
   height: auto;
   background-color: #ecf0f1; }
-  /* line 68, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 65, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  .main .bg {
+    background-position: center;
+    background-size: contain; }
+  /* line 69, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  .main .about #greeting {
+    padding: 20px;
+    width: 800px;
+    overflow: hidden;
+    margin: auto; }
+  /* line 74, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about p {
-    width: 620px;
+    margin-top: 40px;
+    width: 60%;
     color: black;
     float: left;
     font-size: 1.1em; }
-  /* line 73, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 80, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about a {
     color: #3498db; }
-  /* line 75, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 82, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about img {
-    border: 4px solid pink;
+    border: 5px solid #bdc3c7;
     border-radius: 4px;
     float: left;
     margin-right: 20px; }
-  /* line 82, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 89, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .portfolio #wrap {
     width: 700px;
     margin: auto;
     overflow: hidden; }
-    /* line 89, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    /* line 96, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
     .main .portfolio #wrap .project {
       width: 340px;
       padding: 20px;
@@ -87,22 +98,22 @@ a {
       margin: 5px;
       margin-bottom: 10px;
       height: 500px; }
-      /* line 100, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+      /* line 107, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
       .main .portfolio #wrap .project img {
         margin: auto;
         width: 279px; }
 
-/* line 109, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 116, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .intro {
   width: 450px;
   text-align: center;
   padding: 20px;
   margin: auto; }
 
-/* line 116, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 123, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 119, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 126, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;

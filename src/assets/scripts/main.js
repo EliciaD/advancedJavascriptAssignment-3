@@ -85,6 +85,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
+        image: 'assets/images/banner.png',
         content: '<div class="intro"><h1>Elicia Durtnall / UX Design</h1><h2>"Enthusiastic, Web Design and Interactive Media graduate. UX designer.</h2></div>'
 
       });
@@ -211,7 +212,8 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-     
+        content: '<p>Hi Everyone,<br>Thank you for checking out my website. Feel free to contact me below in whatever way is most convienent to you. If you want to give advice, share a story, or connect as a professional contact, here is all you need to reach me.<br></br>Sincerely,<br>Elicia Durtnall</p>',
+        body: '<p>cell: 705-627-8288<br>email: eliciadurtnall@gmail.com<br>twitter: @eliciad</p>'
       });
 
     },
