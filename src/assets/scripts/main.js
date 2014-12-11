@@ -178,8 +178,8 @@ jQuery(function($) {
       this.model.set({
      
       works: [
-          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation and User Testing', image:'assets/images/northern.png'},
-          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
+          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation', image:'assets/images/northern.png'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, user testing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
           {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
           {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
         ]
@@ -227,7 +227,6 @@ jQuery(function($) {
         body: 'Jacob Nielson’s 10 General principles of design looked at within the process of buying tickets on northerntickets.com<br></br> 1.  Visibility of system status<br>2.  Match Between System and the Real World<br>3.  User Control and Freedom<br>4.  Consistency and Standards<br>5.  Error Prevention<br>6.  Recognition Rather Than Recall<br>7.  Flexibility and Efficiency of use<br>8.  Aesthetic and minimalist Design<br>9.  Help users Recognize, diagnose and recover from errors<br>10. Help and Documentation',
         title2: 'Issues',
        
-      
         issue: [
           { subtitle:'global Issues', desc: '1. The logo works as the home button on certain pages, but not on all pages. It is very inconsistent. The menu changes when browsing the site to on an account page. Consistency is important to creating a user friendly website.', heuristic:' Heuristic evaluated: Consistency and standards'},
           { subtitle:'Page Level Issues', desc: '1. When you search an event on the home page, before the fold the first thing you see for results is irrelevant information. It is important that you strive for a minimal design. If a user searches for Nils Frahm they would like to be presented with the results for that search first. I suggest that below the results you add a “Didn’t find what you were looking for? Customize your search.” I suggest that the information about if you receive declined by fraud services messages be available elsewhere on the site or if they have received the message then be available to them then. This information is irrelevant to the search.', heuristic:' Heuristic evaluated: Aesthetic and minimalist design'},
@@ -308,12 +307,9 @@ jQuery(function($) {
   // -----------------------------
   // Navigation Links
   // -----------------------------
-
-  $(document).delegate('a', 'click', function(e) {
-    e.preventDefault();
-    App.router.navigate($(this).attr('href'), { trigger: true });
-
+$(document).delegate('a', 'click', function(e) {
+    var url = $(this).attr('href') || '#';
+    var isLocal = url.match(/^#/)
+    if(isLocal) { e.preventDefault(); App.router.navigate($(this).attr('href'), { trigger: true }); }
   });
-
-
 });
