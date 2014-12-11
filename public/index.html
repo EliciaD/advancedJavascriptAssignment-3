@@ -45,15 +45,17 @@
   </script>
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
-      {{#each works}}
-        <div class="project">
-          <img src="{{image}}" class="projectImg">
-          <div class="projDesc">
-            <h2>{{title}}</h2>
-            <p>{{desc}}</p>
+      <div id="wrap">
+        {{#each works}}
+          <div class="project">
+            <img src="{{image}}" class="projectImg">
+            <div class="projDesc">
+              <h2>{{title}}</h2>
+              <p>{{desc}}</p>
+            </div>
           </div>
-        </div>
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
     
     
