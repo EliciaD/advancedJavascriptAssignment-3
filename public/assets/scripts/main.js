@@ -221,15 +221,14 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-     
-      works: [
-          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation and User Testing', image:'assets/images/northern.png'},
-          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
-          {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
-          {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
-        ]
+        title1:'Executive Summary',
+        pg: 'The ticket purchasing flow of northerntickets.com has been examined by using heuristic evaluation. Heuristic evaluation is a review of your site to see if it follows a set list of design principles. These principles work as a general rule of thumb to create a product with the maximum amount of usability for users. We have checked the ticket purchasing flow of the site by completing the task of booking tickets for Nils Frahm at Adelaide Hall on November 19th. The most repetitive heuristics problem found in the site was visibility of system status. I checked all areas of the ticketing purchase process to make sure that the system keeps users aware about what is going on in the site, and provides appropriate feedback.  This issue was found early in the purchasing process so this problem should be made a priority to resolve. As it could potentially prevent users from becoming invested in the ticket purchasing process. Later in the document I will examine the specifics of where this heuristic takes place, as well as other challenges in the site.',
+        title: 'Heuristics',
+        body: 'Jacob Nielson’s 10 General principles of design looked at within the process of buying tickets on northerntickets.com<br></br> 1.  Visibility of system status<br>2.  Match Between System and the Real World<br>3.  User Control and Freedom<br>4.  Consistency and Standards<br>5.  Error Prevention<br>6.  Recognition Rather Than Recall<br>7.  Flexibility and Efficiency of use<br>8.  Aesthetic and minimalist Design<br>9.  Help users Recognize, diagnose and recover from errors<br>10. Help and Documentation',
+        title2: 'Issues',
+        subtitle: 'global Issues',
       });
-
+      
     },
 
     // Our Render Function

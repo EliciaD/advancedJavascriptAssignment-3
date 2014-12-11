@@ -56,68 +56,77 @@ a {
   border-bottom: 1px solid #efefef;
   height: auto;
   background-color: #ecf0f1; }
-  /* line 64, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  .main .bg {
-    background-position: center;
-    background-size: contain; }
-  /* line 68, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 62, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  .main .details #wrap {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+    background-color: white; }
+    /* line 68, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    .main .details #wrap h2 {
+      color: #e74c3c; }
+    /* line 70, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    .main .details #wrap p {
+      font-size: 1.1em; }
+  /* line 77, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about #greeting {
     padding: 20px;
     width: 800px;
     overflow: hidden;
     margin: auto; }
-  /* line 73, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 82, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about p {
     margin-top: 40px;
     width: 60%;
     color: black;
     float: left;
     font-size: 1.1em; }
-  /* line 79, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 88, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about a {
     color: #3498db; }
-  /* line 81, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 90, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .about img {
     border: 5px solid #bdc3c7;
     border-radius: 4px;
     float: left;
     margin-right: 20px; }
-  /* line 87, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 96, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact #contactInfo {
     padding: 20px;
     width: 60%;
     float: left;
     font-size: 1.1em;
     margin-top: 40px; }
-  /* line 93, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 102, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact a {
     color: #3498db; }
-  /* line 95, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 104, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact form {
     float: left;
     padding: 20px;
     width: 30%; }
-  /* line 99, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 108, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact input {
     padding: 10px;
     border-radius: 5px;
     width: 100%; }
-  /* line 103, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 112, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact textarea {
     padding: 10px;
     border-radius: 5px;
     width: 100%; }
-  /* line 108, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 117, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .contact #wrap2 {
     margin: auto;
     width: 70%;
     overflow: hidden; }
-  /* line 116, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 125, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .main .portfolio #wrap {
     width: 700px;
     margin: auto;
     overflow: hidden; }
-    /* line 121, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    /* line 130, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
     .main .portfolio #wrap .project {
       width: 340px;
       padding: 20px;
@@ -128,25 +137,25 @@ a {
       margin: 5px;
       margin-bottom: 10px;
       height: 500px; }
-      /* line 131, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+      /* line 140, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
       .main .portfolio #wrap .project a {
         color: #3498db; }
-      /* line 133, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+      /* line 142, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
       .main .portfolio #wrap .project img {
         margin: auto;
         width: 279px; }
 
-/* line 142, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 151, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .intro {
   width: 450px;
   text-align: center;
   padding: 20px;
   margin: auto; }
 
-/* line 149, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+/* line 158, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 152, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 161, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;

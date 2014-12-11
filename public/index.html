@@ -15,7 +15,6 @@
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><a href="/details">details</a></li>
       </ul>
     </header>
   </div>
@@ -53,7 +52,7 @@
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
-              <a href="/deatils">Learn More >></a>
+              <a href="/details">Learn More >></a>
             </div>
           </div>
         {{/each}}
@@ -64,16 +63,12 @@
   <script id="details" type="text/template">
     <div class="page details">
       <div id="wrap">
-        {{#each works}}
-          <div class="project">
-            <img src="{{image}}" class="projectImg">
-            <div class="projDesc">
-              <h2>{{title}}</h2>
-              <p>{{desc}}</p>
-              <a href="/details">Learn More >></a>
-            </div>
-          </div>
-        {{/each}}
+        <h2>{{{ title1 }}}</h2>
+        <p>{{{ pg }}}</p>
+        <h2>{{{ title }}}</h2>
+        <p>{{{ body }}}</p>
+        <h2>{{{ title2 }}}</h2>
+        <h3>{{{ subtitle }}}</h3>
       </div>
     </div>
     
