@@ -125,7 +125,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About</h1>',
+       
         body: '<p>Hi, my name is Elicia Durtnall<br></br>I aspire to be a UX Designer. I am currently in my last year at Humber College for web design and interactive media. Send me a <a href="mailto:eliciadurtnall@gmail.com?Subject=Website%20Contact" target="">message</a> if you would like to chat or give me a follow on twitter <a href="">@eliciad</a>. I look forward to hearing from you!</p>',
         image: 'assets/images/elicia_durtnall.png'
       });
@@ -166,7 +166,13 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Portfolio</h1>'
+     
+      works: [
+          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation and User Testing', image:'assets/images/northern.png'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
+          {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
+          {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
+        ]
       });
 
     },
@@ -205,7 +211,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Contact</h1>'
+     
       });
 
     },
