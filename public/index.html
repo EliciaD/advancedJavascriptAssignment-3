@@ -69,6 +69,16 @@
         <p>{{{ body }}}</p>
         <h2>{{{ title2 }}}</h2>
         <h3>{{{ subtitle }}}</h3>
+        <p>{{{ body2 }}}</p>
+        <h3>{{{ subtitle2 }}}</h3>
+         {{#each works}}
+          <div class="pageIssues">
+            <img src="{{image}}" class="projectImg">
+            <div class="projDesc">
+              <p>{{desc}}</p>
+              <div class="heuristic"><p>{{heuristic}}</p></div>
+          </div>
+        {{/each}}
       </div>
     </div>
     
