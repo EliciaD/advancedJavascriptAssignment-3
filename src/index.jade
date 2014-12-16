@@ -21,6 +21,7 @@ html
   div.wrapper
 
      header.header
+     a(href="/")
       img(src='assets/images/logo.png')
 
       ul.nav
@@ -67,7 +68,7 @@ html
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
-              <a href="/details">Learn More >></a>
+              <a href="{{url}}">Learn More >></a>
             </div>
           </div>
         {{/each}}
@@ -90,7 +91,6 @@ html
               <h3>{{ subtitle }}</h3>
               <p>{{desc}}</p>
                <img src="{{image}}" class="issueImg">
-
                <img src="{{image2}}" class="issueImg">
               <div class="heuristic"><p>{{heuristic}}</p></div>
           </div>

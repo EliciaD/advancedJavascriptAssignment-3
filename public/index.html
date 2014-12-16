@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <body></body>
   <div class="wrapper">
-    <header class="header"><img src="assets/images/logo.png">
+    <header class="header"></header><a href="/"><img src="assets/images/logo.png">
       <ul class="nav">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/contact">Contact</a></li>
-      </ul>
-    </header>
+      </ul></a>
   </div>
   <div class="main">
     <footer class="footer">
@@ -52,7 +51,7 @@
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
-              <a href="/details">Learn More >></a>
+              <a href="{{url}}">Learn More >></a>
             </div>
           </div>
         {{/each}}
@@ -76,7 +75,6 @@
               <h3>{{ subtitle }}</h3>
               <p>{{desc}}</p>
                <img src="{{image}}" class="issueImg">
-    
                <img src="{{image2}}" class="issueImg">
               <div class="heuristic"><p>{{heuristic}}</p></div>
           </div>

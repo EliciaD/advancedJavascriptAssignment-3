@@ -178,8 +178,8 @@ jQuery(function($) {
       this.model.set({
      
       works: [
-          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation, and User Testing', image:'assets/images/northern.png'},
-          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', URL:'https://github.com/EmersonGGS/Blockgun-Insanity'},
+          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation, and User Testing', image:'assets/images/northern.png', url:'/details'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png'},
           {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
           {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
         ]
