@@ -50,6 +50,21 @@ html
     {{{content}}}
     </div>
 
+  script#helpr(type="text/template").
+    <div class="page helpr"> 
+      <div class="process"> 
+      {{#each step}}
+          <div class="processStep">
+            <img src="{{image}}" class="projectImg">
+            <div class="projDesc">
+              <h2>{{title}}</h2>
+              <p>{{desc}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
 
   script#about(type="text/template").
     <div class="page about">

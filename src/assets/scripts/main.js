@@ -16,6 +16,7 @@ jQuery(function($) {
       '' : 'home',
       'about': 'about',
       'portfolio': 'portfolio',
+      'helpr': 'helpr',
       'contact': 'contact',
       'details': 'details',
     },
@@ -25,6 +26,12 @@ jQuery(function($) {
       console.log('Navigating to Home Page');
       App.views['home'].render();
     },
+    // Home Route
+    helpr: function() {
+      console.log('Navigating to Home Page');
+      App.views['helpr'].render();
+    },
+
 
     // About Route
     about: function() {
@@ -66,6 +73,7 @@ jQuery(function($) {
       home: new HomeView(),
       about: new AboutView(),
       portfolio: new PortfolioView(),
+      helpr: new helprView(),
         details: new detailsView(),
       contact: new ContactView(),
     
@@ -113,7 +121,55 @@ jQuery(function($) {
     }
 
   });
+ // -----------------------------
+  // Home View
+  // -----------------------------
 
+  var helprView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#helpr',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        
+        steps: [
+          { image:'assets/images/helpr/persona.png'},
+          {image2:'assets/images/helpr/sketches.png'},
+          {image3:'assets/images/helpr/wireframes.png'},
+          {image4:'assets/images/helpr/paperProto.png'},
+          {image5:'assets/images/helpr/mockups.png'},
+          {image6:'assets/images/helpr/proto.png'},
+        ]
+
+      
+
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
 // -----------------------------
   // About View
   // -----------------------------
@@ -179,7 +235,7 @@ jQuery(function($) {
      
       works: [
           {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation, and User Testing', image:'assets/images/northern.png', url:'/details'},
-          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', url:'/helpr'},
           {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
           {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
         ]
