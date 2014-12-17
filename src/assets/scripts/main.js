@@ -143,13 +143,13 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         
-        steps: [
-          { image:'assets/images/helpr/persona.png'},
-          {image2:'assets/images/helpr/sketches.png'},
-          {image3:'assets/images/helpr/wireframes.png'},
-          {image4:'assets/images/helpr/paperProto.png'},
-          {image5:'assets/images/helpr/mockups.png'},
-          {image6:'assets/images/helpr/proto.png'},
+        step: [
+          {image:'assets/images/helpr/persona.png', title:'Persona Boards', desc:''},
+          {image:'assets/images/helpr/sketches.png', title:'sketches'},
+          {image:'assets/images/helpr/wireframes.png', title:'Wireframes'},
+          {image:'assets/images/helpr/paperProto.png', title: 'Wizard of Oz - Paper prototyping' },
+          {image:'assets/images/helpr/mockups.png', title: 'Mockups'},
+          {image:'assets/images/helpr/proto.png', title:'Prototype', desc:'3 Use Cases: 1. Please accept the Job to mow a lawn on October 25th 2014. 2. Collect a signature for the previously accepted job to mow a lawn on October 25th 2014. 3. Send your volunteer form to a guidance counselor.'},
         ]
 
       

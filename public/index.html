@@ -34,12 +34,15 @@
   </script>
   <script id="helpr" type="text/template">
     <div class="page helpr"> 
-     <img src="{{{image}}}"/>
-      <img src="{{{image2}}}"/>
-      <img src="{{{image3}}}"/>
-      <img src="{{{image4}}}"/>
-      <img src="{{{image5}}}"/>
-      <img src="{{{image6}}}"/>
+      {{#each step}}
+          <div class="processStep">
+            <img src="{{image}}" class="stepImg">
+            <div class="projDesc">
+              <h2>{{title}}</h2>
+              <p>{{desc}}</p>
+            </div>
+          </div>
+        {{/each}}
     </div>
     
     
