@@ -45,8 +45,6 @@ a
   padding: 0px
   border-bottom: 1px solid $lightColor
 
-  img
-    padding:10px
 // -----------------------------
 // Navigation
 // -----------------------------
@@ -64,7 +62,8 @@ a
     list-style: none
 
     a
-      padding: 5px 10px
+      padding: 15px
+
 
     a:hover
       color:#3498db
@@ -120,7 +119,7 @@ a
   .about
     #greeting
       padding:20px
-      width:800px
+      width:60%
       overflow:hidden
       margin:auto
       background-color:white
@@ -177,13 +176,13 @@ a
 
   .portfolio
     #wrap
-      width: 700px
+      width: 71%
       margin:auto
       overflow:hidden
 
 
       .project
-        width:340px
+        width: 320px 
         padding:20px
         float:left
         background-color:white
@@ -230,3 +229,29 @@ a
     padding: 0
     font-size: 12px
 
+// Desktop
+@media (max-width: 1680px)
+  body
+    background-color:red
+   
+// Laptop
+@media (max-width: 1280px)
+  body
+    background-color:blue
+// Tablet
+@media (max-width: 1024px)
+  body
+    background-color:green
+  
+@media (max-width: 768px)
+  body
+    background-color:yellow
+
+// Mobile
+@media (max-width: 640px)
+  body
+    background-color:black
+
+@media (max-width: 480px)
+  body
+    background-color:orange

@@ -234,10 +234,10 @@ jQuery(function($) {
       this.model.set({
      
       works: [
-          {title: 'Northern Tickets - Case Study', desc: 'Northern tickets: Heuristic Evaluation, and User Testing', image:'assets/images/northern.png', url:'/details'},
+          {title: 'Northern Tickets', desc: 'Northern tickets: Heuristic Evaluation', image:'assets/images/northern.png', url:'/details'},
           {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', url:'/helpr'},
           {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
-          {title: 'Investment Planning Counsel - Marketing & Communications', desc: 'Advisor site creations, and internal & external communications.', image:'assets/images/project7.png'},
+          {title: 'Northern Tickets', desc: 'User Testing', image:'assets/images/testing.png'},
         ]
       });
 
@@ -277,6 +277,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
+
         title1:'Executive Summary',
         pg: 'The ticket purchasing flow of northerntickets.com has been examined by using heuristic evaluation. Heuristic evaluation is a review of your site to see if it follows a set list of design principles. These principles work as a general rule of thumb to create a product with the maximum amount of usability for users. We have checked the ticket purchasing flow of the site by completing the task of booking tickets for Nils Frahm at Adelaide Hall on November 19th. The most repetitive heuristics problem found in the site was visibility of system status. I checked all areas of the ticketing purchase process to make sure that the system keeps users aware about what is going on in the site, and provides appropriate feedback.  This issue was found early in the purchasing process so this problem should be made a priority to resolve. As it could potentially prevent users from becoming invested in the ticket purchasing process. Later in the document I will examine the specifics of where this heuristic takes place, as well as other challenges in the site.',
         title: 'Heuristics',
@@ -291,9 +292,22 @@ jQuery(function($) {
           { desc: '4. When the user is instructed to fill out a form before purchasing tickets, clicking continue without filling out all the required fields results in a list being displayed of what you are missing in an alert box. This is bad heuristics because it requires you to use recall rather than recognition when returning to the form. The user has to try to remember which fields were not filled out and how to correct it. I recommend that the missing form attributes be displayed on the page rather then in a pop up which you have to delete in order to continue.',image:'assets/images/heuristicIssues/issue4.png', heuristic:'Heuristic evaluated: Recognition rather than recall'},
           { desc: '5. On the account page there is no indicator to how far you are in the process until you get to the delivery details page. Users need to know where they are in the process at all times. If there is no indicator to where you are in the purchasing process it is likely users will abandon the process all together. Also on the account page when the user clicks continue with the form, without filling out all the required fields, the form tells you there is something wrong with yellow warning sign’s. This is very confusing. The areas incomplete should be shown in red, as yellow gives the impression it is recommended to fill out this section not a requirement. Even so it is not enough to tell the user something is wrong.  There should be a response telling the user how to fix the form on the page. I recommend that with each field incomplete the system highlight it with red and provide them with some sort of example or short explanation of how to properly fill out the area on the page. Also we can restructure the input fields to not be both vertical and horizontal. Eliminating the user needing to look both up and down, and left to right as fields could be missed.',image:'assets/images/heuristicIssues/issue5.png', heuristic:'Heuristics evaluated: Error prevention, Help and Documentation, Visibility of system status and Match between system and the real world.'},
           { desc: '6. The shopping cart performance details do not include location, which makes the user rely on recall. Also the shopping cart’s remove performance link deletes all tickets, there is no option to delete a single ticket for example if the user no longer needs 3 tickets, or they accidently chose 3 and just want one. I recommend adjusting the remove performance feature to be a remove ticket feature. With a remove ticket feature users will have the freedom to delete whichever tickets they choose.',image:'assets/images/heuristicIssues/issue6.png', heuristic:'Heuristic evaluated: Recognition rather than recall, and User control and freedom.'},
-          { desc: '7. Captchas are un liked by users, having an entire page dedicated to a captcha may annoy a user from continuing there purchasing process. I suggest a check box captcha within the form. It helps conserve space and limit the amount of interruption.', image:'assets/images/heuristicIssues/issue7.png', heuristic:'Heuristic evaluated: Aesthetic and minimalist design'},
-
+          { desc: '7. Captchas are un liked by users, having an entire page dedicated to a captcha may annoy a user from continuing there purchasing process. I suggest a check box captcha within the form. It helps conserve space and limit the amount of interruption.', image:'assets/images/heuristicIssues/issue7.png', heuristic:'Heuristic evaluated: Aesthetic and minimalist design'}
         ]
+        /*,
+        title3:'User Testing',
+          testing:[
+            {image:'assets/images/UserTestingSlides/introSlide.png'},
+            {image:'assets/images/UserTestingSlides/negativeFindings.png'},
+            {image:'assets/images/UserTestingSlides/morenegative.png'},
+            {image:'assets/images/UserTestingSlides/morenegative2.png'},
+            {image:'assets/images/UserTestingSlides/participants.png'},
+            {image:'assets/images/UserTestingSlides/process.png'},
+            {image:'assets/images/UserTestingSlides/recommendations.png'},
+            {image:'assets/images/UserTestingSlides/results.png'},
+            {image:'assets/images/UserTestingSlides/summary.png'},
+            {image:'assets/images/UserTestingSlides/summaryCont.png'}
+          ] */
       });
       
     },
