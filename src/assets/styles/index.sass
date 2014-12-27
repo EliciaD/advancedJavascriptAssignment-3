@@ -21,7 +21,6 @@ body
   font-family: sans-serif
   color: $color
 
-
 a
   text-decoration: none
   display: inline-block
@@ -46,7 +45,7 @@ a
 
 .header
   padding: 0px
-  border-bottom: 1px solid $lightColor
+  background-color:white
 
 // -----------------------------
 // Navigation
@@ -77,7 +76,10 @@ a
 
 .main
   padding: 20px
-  border-bottom: 1px solid $lightColor
+  background-image: url(../images/home_mock.png)
+  background-repeat: no-repeat
+  background-size: cover
+  
   
   .details
       #wrap
@@ -114,10 +116,6 @@ a
         width:50%
 
   .home
-  background-color: #ecf0f1
-  background-image: url(../images/home_mock.png)
-  background-repeat: no-repeat
-  background-size: cover
  
   .about
     #greeting
@@ -240,6 +238,9 @@ a
       .portfolio
         #wrap
           width: 1200px
+      .details
+        #wrap
+          width:60%
 
           
         
@@ -258,8 +259,15 @@ a
         #greeting
           padding:20px
           width:70%
-        
-
+      .contact
+        #contactInfo
+          width:50%
+        form
+          float:left
+          width:45%
+      .details
+        #wrap
+          width:80%
 
 
 // Tablet
@@ -276,7 +284,19 @@ a
         #greeting
           padding:20px
           width:90%
- 
+     .details
+        #wrap
+          width:90%
+        .issueImg
+          width:60%
+     .contact
+        #wrap2
+          width:90%
+        #contactInfo
+          width:50%
+        form
+          width:50%
+      
 
 @media (max-width: 768px)
   body
@@ -294,29 +314,37 @@ a
           p
             margin-top:40px
             width:55%
-
-
+      .details
+        #wrap
+          width:100%
+        .issueImg
+          width:80%
 // Mobile
 @media (max-width: 640px)
   body
     background-color:white
+    .main
+      .about
+        #greeting
+          padding:20px
+          width:100%
+          p
+            margin-top:40px
+            width:98%
+          img
+            width:40%
+      .contact
+        #contactInfo
+          width:100%
+        form
+          width:100%
   .mobileOnly
     display: block
     float:right
     padding:20px
   .nav
     display:none
-  .main
-        .about
-          #greeting
-            padding:20px
-            width:100%
-            p
-              margin-top:40px
-              width:98%
-            img
-              width:40%
-
+    
 
 @media (max-width: 480px)
   body
@@ -331,3 +359,14 @@ a
                 width:98%
               img
                 width:60%
+          .details
+            .issueImg
+              width:100%
+          .contact
+            #wrap2
+              width:100%
+            #contactInfo
+              width:100%
+            form
+              width:100%
+          
