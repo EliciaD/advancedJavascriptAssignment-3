@@ -27,6 +27,9 @@ a
   display: inline-block
   color: $color
 
+.mobileOnly
+  display: none
+
 // -----------------------------
 // App Specific
 // -----------------------------
@@ -176,13 +179,13 @@ a
 
   .portfolio
     #wrap
-      width: 71%
+      width: 1330px
       margin:auto
       overflow:hidden
 
 
       .project
-        width: 320px 
+        width: 24% 
         padding:20px
         float:left
         background-color:white
@@ -195,7 +198,7 @@ a
           color: #3498db
         img
           margin: auto
-          width:279px
+          width:100%
 
   
   
@@ -233,25 +236,98 @@ a
 @media (max-width: 1680px)
   body
     background-color:red
+    .main
+      .portfolio
+        #wrap
+          width: 1200px
+
+          
+        
    
 // Laptop
 @media (max-width: 1280px)
   body
     background-color:blue
+    .main
+      .portfolio
+        #wrap
+          width: 660px
+          .project
+            width: 320px 
+      .about
+        #greeting
+          padding:20px
+          width:70%
+        
+
+
+
 // Tablet
 @media (max-width: 1024px)
   body
     background-color:green
-  
+    .main
+     .portfolio
+       #wrap
+         width: 660px
+         .project
+           width: 320px 
+     .about
+        #greeting
+          padding:20px
+          width:90%
+ 
+
 @media (max-width: 768px)
   body
     background-color:yellow
+    .main
+      .portfolio
+        #wrap
+          width: 330px
+          .project
+            width: 320px 
+      .about
+        #greeting
+          padding:20px
+          width:100%
+          p
+            margin-top:40px
+            width:55%
+
 
 // Mobile
 @media (max-width: 640px)
   body
-    background-color:black
+    background-color:white
+  .mobileOnly
+    display: block
+    float:right
+    padding:20px
+  .nav
+    display:none
+  .main
+        .about
+          #greeting
+            padding:20px
+            width:100%
+            p
+              margin-top:40px
+              width:98%
+            img
+              width:40%
+
 
 @media (max-width: 480px)
   body
     background-color:orange
+    .main
+          .about
+            #greeting
+              padding:20px
+              width:100%
+              p
+                margin-top:40px
+                width:98%
+              img
+                width:60%
