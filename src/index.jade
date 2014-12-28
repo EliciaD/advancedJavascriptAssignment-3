@@ -39,24 +39,24 @@ html
         a#simple-menu(href='#sidr')
           img(src='assets/images/menu.png')
    
-      
-        ul#sidr
-          li
-            a(href='/') Home
+        #sidr
+          ul
+            li
+              a(href='/') Home
+                
+            li.active
+              a(href='/about') About
               
-          li.active
-            a(href='/about') About
-            
-          li
-            a(href='/portfolio') Portfolio
+            li
+              a(href='/portfolio') Portfolio
 
-          li
-            a(href='/contact') Contact
+            li
+              a(href='/contact') Contact
 
-          script.
-            $(document).ready(function() {
-           
-            });
+            script.
+              $(document).ready(function() {
+             
+              });
 
    
 

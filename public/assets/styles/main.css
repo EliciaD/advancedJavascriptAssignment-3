@@ -208,158 +208,140 @@ a {
     font-size: 12px; }
 
 @media (max-width: 1680px) {
-  /* line 215, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: red; }
-    /* line 219, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .portfolio #wrap {
-      width: 1200px; }
-    /* line 222, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details #wrap {
-      width: 60%; }
+  /* line 218, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .portfolio #wrap {
+    width: 1200px; }
+  /* line 221, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details #wrap {
+    width: 60%; }
  }
 
 @media (max-width: 1280px) {
-  /* line 229, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: blue; }
+  /* line 231, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .portfolio #wrap {
+    width: 660px; }
     /* line 233, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .portfolio #wrap {
-      width: 660px; }
-      /* line 235, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .portfolio #wrap .project {
-        width: 320px; }
-    /* line 238, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .about #greeting {
-      padding: 20px;
-      width: 70%; }
-    /* line 242, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #contactInfo {
-      width: 50%; }
-    /* line 244, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact form {
-      float: left;
-      width: 45%; }
-    /* line 248, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details #wrap {
-      width: 80%; }
+    body .main .portfolio #wrap .project {
+      width: 320px; }
+  /* line 236, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .about #greeting {
+    padding: 20px;
+    width: 70%; }
+  /* line 240, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #contactInfo {
+    width: 50%; }
+  /* line 242, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact form {
+    float: left;
+    width: 45%; }
+  /* line 246, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details #wrap {
+    width: 80%; }
  }
 
 @media (max-width: 1024px) {
-  /* line 253, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: green; }
-    /* line 257, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .portfolio #wrap {
-      width: 660px; }
-      /* line 259, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .portfolio #wrap .project {
-        width: 320px; }
-    /* line 262, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .about #greeting {
-      padding: 20px;
-      width: 90%; }
-    /* line 266, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details #wrap {
-      width: 90%; }
-    /* line 268, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details .issueImg {
-      width: 60%; }
-    /* line 271, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #wrap2 {
-      width: 90%; }
-    /* line 273, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #contactInfo {
-      width: 50%; }
-    /* line 275, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact form {
-      width: 50%; }
+  /* line 254, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .portfolio #wrap {
+    width: 660px; }
+    /* line 256, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .portfolio #wrap .project {
+      width: 320px; }
+  /* line 259, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .about #greeting {
+    padding: 20px;
+    width: 90%; }
+  /* line 263, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details #wrap {
+    width: 90%; }
+  /* line 265, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details .issueImg {
+    width: 60%; }
+  /* line 268, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #wrap2 {
+    width: 90%; }
+  /* line 270, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #contactInfo {
+    width: 50%; }
+  /* line 272, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact form {
+    width: 50%; }
  }
 
 @media (max-width: 768px) {
   /* line 280, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: yellow; }
-    /* line 284, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .portfolio #wrap {
-      width: 330px; }
-      /* line 286, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .portfolio #wrap .project {
-        width: 320px; }
-    /* line 289, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .about #greeting {
-      padding: 20px;
-      width: 100%; }
-      /* line 292, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .about #greeting p {
-        margin-top: 40px;
-        width: 55%; }
-    /* line 296, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details #wrap {
-      width: 100%; }
-    /* line 298, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details .issueImg {
-      width: 80%; }
+  body .main .portfolio #wrap {
+    width: 330px; }
+    /* line 282, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .portfolio #wrap .project {
+      width: 320px; }
+  /* line 285, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .about #greeting {
+    padding: 20px;
+    width: 100%; }
+    /* line 288, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .about #greeting p {
+      margin-top: 40px;
+      width: 55%; }
+  /* line 292, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details #wrap {
+    width: 100%; }
+  /* line 294, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details .issueImg {
+    width: 80%; }
  }
 
 @media (max-width: 640px) {
-  /* line 301, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: white; }
-    /* line 305, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .about #greeting {
-      padding: 20px;
-      width: 100%; }
-      /* line 308, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .about #greeting p {
-        margin-top: 40px;
-        width: 98%; }
-      /* line 311, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .about #greeting img {
-        width: 40%; }
-    /* line 314, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #contactInfo {
-      width: 100%; }
-    /* line 316, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact form {
-      width: 100%; }
+  /* line 300, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .about #greeting {
+    padding: 20px;
+    width: 100%; }
+    /* line 303, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .about #greeting p {
+      margin-top: 40px;
+      width: 98%; }
+    /* line 306, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .about #greeting img {
+      width: 40%; }
+  /* line 309, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #contactInfo {
+    width: 100%; }
+  /* line 311, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact form {
+    width: 100%; }
 
-  /* line 318, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 313, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   #simple-menu {
     display: block;
     float: right;
     padding: 20px; }
 
-  /* line 322, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  /* line 317, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
   .nav {
     display: none; }
  }
 
 @media (max-width: 480px) {
-  /* line 327, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-  body {
-    background-color: orange; }
+  /* line 325, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .about #greeting {
+    padding: 20px;
+    width: 100%; }
+    /* line 328, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+    body .main .about #greeting p {
+      margin-top: 40px;
+      width: 98%; }
     /* line 331, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .about #greeting {
-      padding: 20px;
-      width: 100%; }
-      /* line 334, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .about #greeting p {
-        margin-top: 40px;
-        width: 98%; }
-      /* line 337, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-      body .main .about #greeting img {
-        width: 60%; }
-    /* line 340, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .details .issueImg {
-      width: 100%; }
-    /* line 343, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #wrap2 {
-      width: 100%; }
-    /* line 345, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact #contactInfo {
-      width: 100%; }
-    /* line 347, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
-    body .main .contact form {
-      width: 100%; }
+    body .main .about #greeting img {
+      width: 60%; }
+  /* line 334, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .details .issueImg {
+    width: 100%; }
+  /* line 337, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #wrap2 {
+    width: 100%; }
+  /* line 339, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact #contactInfo {
+    width: 100%; }
+  /* line 341, C:/Users/Elicia/Desktop/advancedJavascriptAssignment-3/src/assets/styles/index.sass */
+  body .main .contact form {
+    width: 100%; }
  }
