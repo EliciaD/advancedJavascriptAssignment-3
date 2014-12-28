@@ -7,22 +7,38 @@
   <title>Elicia Durtnall, UX Designer Toronto ON,</title>
   <meta name="description" content="Humber College graduate, Elicia Durtnall's personal portfolio website.">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <link rel="stylesheet" href="assets/styles/jquery.sidr.dark.css" type="text/css">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
-  <body></body>
-  <div class="wrapper">
-    <header class="header"></header><a href="/"><img src="assets/images/logo.png">
-      <ul class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul><a id="mobileNav" class="mobileOnly"><img src="assets/images/menu.png"></a></a>
-  </div>
-  <div class="main">
-    <footer class="footer">
-      <p>Copyright &copy; 2014</p>
-    </footer>
-  </div>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header><a href="/"><img src="assets/images/logo.png">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact </a></li>
+        </ul><a id="simple-menu" href="#sidr"><img src="assets/images/menu.png"></a>
+        <ul id="sidr">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/about">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <script>
+            $(document).ready(function() {
+            
+            });
+            
+            
+            
+          </script>
+        </ul></a>
+    </div>
+    <div class="main">
+      <footer class="footer">
+        <p>Copyright &copy; 2014</p>
+      </footer>
+    </div>
+  </body>
   <!-- ------------------------------->
   <!-- Templates-->
   <!-- ------------------------------->
@@ -128,5 +144,9 @@
   <!-- ------------------------------->
   <!-- Application-->
   <!-- ------------------------------->
+  <script src="assets/scripts/jquery-1.11.2.min.js">
+    <!-- Include the Sidr JS-->
+  </script>
+  <script src="assets/scripts/jquery.sidr.min.js"></script>
   <script type="text/javascript" src="assets/scripts/main.js"></script>
 </html>

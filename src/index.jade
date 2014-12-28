@@ -14,34 +14,57 @@ html
 
   meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
+  link(rel="stylesheet", href="assets/styles/jquery.sidr.dark.css", type="text/css")
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+ 
 
   body
 
-  div.wrapper
+    div.wrapper
 
-     header.header
-     a(href="/")
-      img(src='assets/images/logo.png')
+       header.header
+       a(href="/")
+        img(src='assets/images/logo.png')
 
-      ul.nav
+        ul.nav
 
-        li: a(href="/") Home
+          li: a(href="/") Home
 
-        li: a(href="/about") About
-        
-        li: a(href="/portfolio") Portfolio
-           
-        li: a(href="/contact") Contact
-
-      a#mobileNav.mobileOnly: img(src='assets/images/menu.png') 
+          li: a(href="/about") About
+          
+          li: a(href="/portfolio") Portfolio
+             
+          li: a(href="/contact") Contact 
        
+        a#simple-menu(href='#sidr')
+          img(src='assets/images/menu.png')
+   
+      
+        ul#sidr
+          li
+            a(href='/') Home
+              
+          li.active
+            a(href='/about') About
+            
+          li
+            a(href='/portfolio') Portfolio
 
-    div.main
-  
-    footer.footer
+          li
+            a(href='/contact') Contact
 
-      p Copyright &copy; 2014
+          script.
+            $(document).ready(function() {
+           
+            });
+
+   
+
+      div.main
+    
+      footer.footer
+
+        p Copyright &copy; 2014
 
   // -----------------------------
   // Templates
@@ -150,4 +173,7 @@ html
   // Application
   // -----------------------------
 
+  script(src='assets/scripts/jquery-1.11.2.min.js')
+    // Include the Sidr JS
+  script(src='assets/scripts/jquery.sidr.min.js')
   script(type="text/javascript", src="assets/scripts/main.js")
