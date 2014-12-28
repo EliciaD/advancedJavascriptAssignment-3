@@ -5,7 +5,9 @@
 
 jQuery(function($) {
 
-   $('#simple-menu').sidr();
+   $('#simple-menu').sidr({
+    side:'right'
+   });
 
   // -----------------------------
   // Router
