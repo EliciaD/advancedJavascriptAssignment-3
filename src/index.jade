@@ -84,6 +84,18 @@ html
         {{/each}}
     </div>  
 
+  script#farmFresh(type="text/template").
+    <div class="page farmFresh"> 
+      <img src="{{image}}" class="farmFresh_mockups">
+      {{#each content}}
+          <div class="farmFreshContent">
+            <h2>{{title}}</h2>
+            <p>{{desc}}</p>
+          </div>
+        {{/each}}
+        <img src="{{colorScheme}}">
+    </div>  
+
   script#helpr(type="text/template").
     <div class="page helpr">
     

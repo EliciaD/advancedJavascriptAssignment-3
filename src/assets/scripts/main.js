@@ -21,6 +21,7 @@ jQuery(function($) {
       'about': 'about',
       'portfolio': 'portfolio',
       'helpr': 'helpr',
+      'farmFresh': 'farmFresh',
       'northerntickets': 'northerntickets',
       'contact': 'contact',
       'details': 'details',
@@ -34,6 +35,9 @@ jQuery(function($) {
     // northern tickets
     northerntickets: function() {
       App.views['northerntickets'].render();
+    },
+      farmFresh: function() {
+      App.views['farmFresh'].render();
     },
     // Home Route
     helpr: function() {
@@ -81,6 +85,7 @@ jQuery(function($) {
       about: new AboutView(),
       portfolio: new PortfolioView(),
       helpr: new helprView(),
+      farmFresh: new farmFreshView(),
       northerntickets: new northernticketsView(),
         details: new detailsView(),
       contact: new ContactView(),
@@ -183,7 +188,7 @@ jQuery(function($) {
 
   });
  // -----------------------------
-  // Home View
+  // Helpr View
   // -----------------------------
 
   var helprView = Backbone.View.extend({
@@ -214,6 +219,53 @@ jQuery(function($) {
         ]
 
       
+
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+
+  var farmFreshView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#farmFresh',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+       
+      image:'assets/images/farmFresh/farmfresh_mockups.png',
+      content: [
+          {title:'What is Farm Fresh', desc:'- Farm Fresh Marketing Association is a non-profit corporation created in 2007. - The association is made up of area farmers, farmers’ markets, restaurants and includes other community partners in the health field, food security, government, tourism and economic development. - All have an interest in raising the awareness of the availability of locally grown food,'},
+          {title:'Our Goal', desc:'Creating an app to minimize the need of a physical farm fresh map. Make shopping locally an easier experience and to bring in more business for small farms.'},
+          {title:'Target audience', desc:'- Middle-upperclass - Health concious - Local agriculture supporters - Families - People 25-50 years old'},
+          {title:'Benefits of Our App', desc:' Convenience • Easy Shopping • Removing the need for a map, in turn reducing paper waste • Helping local economy and farmers • Eating healthy (organic)'},
+          {title:'What makes our offering unique and different?', desc:'• User Friendly • First of its kind • Gives exposer to local farmers that wouldn’t have any other outlet.'},
+      
+        ],
+        colorScheme:'assets/images/farmFresh/color_scheme.png'
 
       });
 
@@ -296,9 +348,9 @@ jQuery(function($) {
      
       works: [
           {title: 'Northern Tickets', desc: 'Northern tickets: Heuristic Evaluation', image:'assets/images/northern.png', url:'/details'},
-          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', url:'/helpr'},
-          {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
-          {title: 'Northern Tickets', desc: 'User Testing', image:'assets/images/testing.png', url:'/northerntickets'},
+          {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and mockups.',  image:'assets/images/project8.png', url:'/helpr'},
+          {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png', url:'/farmFresh'},
+          {title: 'Northern Tickets', desc: 'Northern Tickets: User Testing', image:'assets/images/testing.png', url:'/northerntickets'},
         ]
       });
 
