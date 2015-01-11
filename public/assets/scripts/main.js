@@ -21,6 +21,7 @@ jQuery(function($) {
       'about': 'about',
       'portfolio': 'portfolio',
       'helpr': 'helpr',
+      'northerntickets': 'northerntickets',
       'contact': 'contact',
       'details': 'details',
     },
@@ -30,13 +31,15 @@ jQuery(function($) {
       console.log('Navigating to Home Page');
       App.views['home'].render();
     },
+    // northern tickets
+    northerntickets: function() {
+      App.views['northerntickets'].render();
+    },
     // Home Route
     helpr: function() {
       console.log('Navigating to Home Page');
       App.views['helpr'].render();
     },
-
-
     // About Route
     about: function() {
       console.log('Navigating to About Page');
@@ -78,6 +81,7 @@ jQuery(function($) {
       about: new AboutView(),
       portfolio: new PortfolioView(),
       helpr: new helprView(),
+      northerntickets: new northernticketsView(),
         details: new detailsView(),
       contact: new ContactView(),
     
@@ -125,6 +129,59 @@ jQuery(function($) {
     }
 
   });
+
+  // -----------------------------
+  // Home View
+  // -----------------------------
+
+  var northernticketsView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#northerntickets',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+          testing:[
+            {image:'assets/images/UserTestingSlides/introSlide.png'},
+            {image:'assets/images/UserTestingSlides/negativeFindings.png'},
+            {image:'assets/images/UserTestingSlides/morenegative.png'},
+            {image:'assets/images/UserTestingSlides/morenegative2.png'},
+            {image:'assets/images/UserTestingSlides/faces.png'},
+            {image:'assets/images/UserTestingSlides/positiveresults.png'},
+            {image:'assets/images/UserTestingSlides/participants.png'},
+            {image:'assets/images/UserTestingSlides/process.png'},
+            {image:'assets/images/UserTestingSlides/script.png', url:'/assets/Script&Schedule.pdf'},
+            {image:'assets/images/UserTestingSlides/results.png'},
+            {image:'assets/images/UserTestingSlides/summary.png'},
+            {image:'assets/images/UserTestingSlides/summaryCont.png'},
+            {image:'assets/images/UserTestingSlides/recommendations.png'},
+          ] 
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
  // -----------------------------
   // Home View
   // -----------------------------
@@ -146,13 +203,13 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        
+        maintitle:'HELPR - An App for Volunteers',
+        showcaseImage:'assets/images/helpr/helpr_mockup.png',
+        content:'Before Helpr high school students didn’t know where to look for volunteer hours that they need to graduate. Now with Helpr, Jobs are easily posted to the app through our website and users are able to have volunteer opportunities easily at hand. The app tracks hours for the students, so they will never be unaware of how many hours they currently have or have to check their sheet or booklet where the amount is recorded.',
         step: [
-          {image:'assets/images/helpr/persona.png', title:'Persona Boards', desc:''},
-          {image:'assets/images/helpr/sketches.png', title:'sketches'},
-          {image:'assets/images/helpr/wireframes.png', title:'Wireframes'},
-          {image:'assets/images/helpr/paperProto.png', title: 'Wizard of Oz - Paper prototyping' },
-          {image:'assets/images/helpr/mockups.png', title: 'Mockups'},
+          {image:'assets/images/helpr/persona.png', title:'Persona Board', desc:'The Target audience for this app is High School Students grade 9-12 who are iphone users. There are 660, 116 English speaking high school students in Ontario, all required to find at least 40 hours of volunteer opportunities. The app will be the first iOS application to cater towards tracking and gathering volunteer hours.'},
+          {image:'assets/images/helpr/sketches.png', image2:'assets/images/helpr/wireframes.png', image3:'assets/images/helpr/mockups.png', title:'Sketches & Wireframes & Mockups', desc:'Version 1.0 Expectations, Search for volunteer jobs within your radius, Tracks complete volunteer jobs, Level progression, Achievements, Signatures, and printable forms'},
+          {image:'assets/images/helpr/paperProto.png', title: 'Wizard of Oz - Paper prototyping', desc:'What we learned from prototyping. Simple navigation layout, Rough functionality structure, Which areas need appropriate feedback, Where confusion may be in our app for the user'},
           {image:'assets/images/helpr/proto.png', title:'Prototype', desc:'3 Use Cases: 1. Please accept the Job to mow a lawn on October 25th 2014. 2. Collect a signature for the previously accepted job to mow a lawn on October 25th 2014. 3. Send your volunteer form to a guidance counselor.'},
         ]
 
@@ -241,7 +298,7 @@ jQuery(function($) {
           {title: 'Northern Tickets', desc: 'Northern tickets: Heuristic Evaluation', image:'assets/images/northern.png', url:'/details'},
           {title: 'Helpr - An App for Volunteers', desc: 'Startup: wireframing, prototyping and market plan.',  image:'assets/images/project8.png', url:'/helpr'},
           {title: 'Farm Fresh - Local Shopping App', desc: 'Startup: personas, wireframes, and high fidelity prototypes.', image:'assets/images/projects2.png'},
-          {title: 'Northern Tickets', desc: 'User Testing', image:'assets/images/testing.png'},
+          {title: 'Northern Tickets', desc: 'User Testing', image:'assets/images/testing.png', url:'/northerntickets'},
         ]
       });
 
@@ -298,20 +355,7 @@ jQuery(function($) {
           { desc: '6. The shopping cart performance details do not include location, which makes the user rely on recall. Also the shopping cart’s remove performance link deletes all tickets, there is no option to delete a single ticket for example if the user no longer needs 3 tickets, or they accidently chose 3 and just want one. I recommend adjusting the remove performance feature to be a remove ticket feature. With a remove ticket feature users will have the freedom to delete whichever tickets they choose.',image:'assets/images/heuristicIssues/issue6.png', heuristic:'Heuristic evaluated: Recognition rather than recall, and User control and freedom.'},
           { desc: '7. Captchas are un liked by users, having an entire page dedicated to a captcha may annoy a user from continuing there purchasing process. I suggest a check box captcha within the form. It helps conserve space and limit the amount of interruption.', image:'assets/images/heuristicIssues/issue7.png', heuristic:'Heuristic evaluated: Aesthetic and minimalist design'}
         ]
-        /*,
-        title3:'User Testing',
-          testing:[
-            {image:'assets/images/UserTestingSlides/introSlide.png'},
-            {image:'assets/images/UserTestingSlides/negativeFindings.png'},
-            {image:'assets/images/UserTestingSlides/morenegative.png'},
-            {image:'assets/images/UserTestingSlides/morenegative2.png'},
-            {image:'assets/images/UserTestingSlides/participants.png'},
-            {image:'assets/images/UserTestingSlides/process.png'},
-            {image:'assets/images/UserTestingSlides/recommendations.png'},
-            {image:'assets/images/UserTestingSlides/results.png'},
-            {image:'assets/images/UserTestingSlides/summary.png'},
-            {image:'assets/images/UserTestingSlides/summaryCont.png'}
-          ] */
+        
       });
       
     },

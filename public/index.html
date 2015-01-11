@@ -11,29 +11,29 @@
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <body>
     <div class="wrapper">
-      <header class="header"></header><a href="/"><img src="assets/images/logo.png">
-        <ul class="nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/contact">Contact </a></li>
-        </ul><a id="simple-menu" href="#sidr"><img src="assets/images/menu.png"></a>
-        <div id="sidr">
-          <ul>
+      <header class="header"><a href="/"><img src="assets/images/logo.png">
+          <ul class="nav">
             <li><a href="/">Home</a></li>
-            <li class="active"><a href="/about">About</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact">Contact </a></li>
+          </ul><a id="simple-menu" href="#sidr"><img src="assets/images/menu.png"></a>
+          <div id="sidr">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="/about">About</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
             <script>
               $(document).ready(function() {
-              
+                
               });
               
               
               
             </script>
-          </ul>
-        </div></a>
+          </div></a></header>
     </div>
     <div class="main">
       <footer class="footer">
@@ -50,11 +50,29 @@
     </div>
     
   </script>
+  <script id="northerntickets" type="text/template">
+    <div class="page northerntickets"> 
+    {{#each testing}}
+          <div class="slides">
+            <a href="{{url}}"><img src="{{image}}" class="testingSlide"></a>
+          </div>
+        {{/each}}
+    </div>  
+    
+  </script>
   <script id="helpr" type="text/template">
-    <div class="page helpr"> 
+    <div class="page helpr">
+    
+    <div class="helprapp">
+      <img src="{{showcaseImage}}" class="showcase">
+      <h1>{{{maintitle}}}</h1>
+      <p class="helprVolunteer">{{{content}}}</p>
+    </div>
       {{#each step}}
           <div class="processStep">
             <img src="{{image}}" class="stepImg">
+            <img src="{{image2}}" class="stepImg2">
+            <img src="{{image3}}" class="stepImg3">
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>

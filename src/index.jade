@@ -23,39 +23,39 @@ html
     div.wrapper
 
        header.header
-       a(href="/")
-        img(src='assets/images/logo.png')
+         a(href="/")
+          img(src='assets/images/logo.png')
 
-        ul.nav
+          ul.nav
 
-          li: a(href="/") Home
+            li: a(href="/") Home
 
-          li: a(href="/about") About
-          
-          li: a(href="/portfolio") Portfolio
-             
-          li: a(href="/contact") Contact 
-       
-        a#simple-menu(href='#sidr')
-          img(src='assets/images/menu.png')
-   
-        #sidr
-          ul
-            li
-              a(href='/') Home
+            li: a(href="/about") About
+            
+            li: a(href="/portfolio") Portfolio
+               
+            li: a(href="/contact") Contact 
+         
+          a#simple-menu(href='#sidr')
+            img(src='assets/images/menu.png')
+     
+          #sidr
+            ul
+              li
+                a(href='/') Home
+                  
+              li.active
+                a(href='/about') About
                 
-            li.active
-              a(href='/about') About
-              
-            li
-              a(href='/portfolio') Portfolio
+              li
+                a(href='/portfolio') Portfolio
 
-            li
-              a(href='/contact') Contact
+              li
+                a(href='/contact') Contact
 
             script.
               $(document).ready(function() {
-             
+                
               });
 
    
@@ -75,11 +75,28 @@ html
     {{{content}}}
     </div>
 
+  script#northerntickets(type="text/template").
+    <div class="page northerntickets"> 
+    {{#each testing}}
+          <div class="slides">
+            <a href="{{url}}"><img src="{{image}}" class="testingSlide"></a>
+          </div>
+        {{/each}}
+    </div>  
+
   script#helpr(type="text/template").
-    <div class="page helpr"> 
+    <div class="page helpr">
+    
+    <div class="helprapp">
+      <img src="{{showcaseImage}}" class="showcase">
+      <h1>{{{maintitle}}}</h1>
+      <p class="helprVolunteer">{{{content}}}</p>
+    </div>
       {{#each step}}
           <div class="processStep">
             <img src="{{image}}" class="stepImg">
+            <img src="{{image2}}" class="stepImg2">
+            <img src="{{image3}}" class="stepImg3">
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>

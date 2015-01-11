@@ -20,11 +20,16 @@ body
   font-size: 14px
   font-family: sans-serif
   color: $color
+  background-image: url(../images/home_mock.png)
+  background-repeat: no-repeat
+  background-size: fill
+  background-color:#ecf0f1
 
 a
   text-decoration: none
   display: inline-block
   color: $color
+  padding-top:20px
 
 #simple-menu
   display: none
@@ -78,11 +83,20 @@ a
 
 .main
   padding: 20px
-  background-image: url(../images/home_mock.png)
-  background-repeat: no-repeat
-  background-size: cover
   
   
+  .northerntickets
+    width: 100%
+    .slides
+      width:586px
+      margin:auto
+      .testingSlide
+        width:100%
+        padding:10px
+
+
+
+
   .details
       #wrap
         width:50%
@@ -105,17 +119,51 @@ a
           padding:15px
 
   .helpr
+    width:90%
+    margin:auto
+    background-color: white
+    box-shadow: 10px 20px 35px -1px rgba(0,0,0,0.75);
+  
+    h1
+      padding:10px
+     
     .processStep
-      width:50%
       padding:20px
-      margin:auto
       overflow:hidden 
-      background-color: white
-      box-shadow: 10px 20px 35px -1px rgba(0,0,0,0.75);
 
       .stepImg
         padding:5px
+        width:300px
+        float:left
+
+      .stepImg2
+        padding:5px
+        width:300px
+        float:left
+      .stepImg3
+        padding:5px
+        width:300px
+        float:left
+
+      .projDesc
         width:50%
+        float:left
+        padding:10px
+    .helprapp
+      width:100%
+      padding:20px
+      overflow:hidden
+      .helprVolunteer
+        padding:10px
+        width:45%
+        float:left
+      .showcase
+        padding:20px
+        float:left
+        width:50%
+
+
+
 
   .home
  
@@ -214,14 +262,15 @@ a
   padding:20px
   margin:auto
   margin-top:60px
-  border: 5px solid white
+  background-color:white
+  border: 3px solid #34495e
   border-radius:10px
   box-shadow: 10px 20px 35px -1px rgba(0,0,0,0.75);
 
   h1
-    color: white
+    color: #34495e
   h2
-    color: white
+    color: #2c3e50
 
 
 .footer
@@ -295,7 +344,22 @@ a
           width:50%
         form
           width:50%
+     .helpr
+      width:90%
+      margin:auto
+      background-color: white
+      box-shadow: 10px 20px 35px -1px rgba(0,0,0,0.75);
+      h1
+        margin-right:10px
+      .helprapp
+        .helprVolunteer
+          padding:10px
+          width:80%
+        .showcase
+          width:50%
       
+      
+ 
 
 @media (max-width: 768px)
   body
@@ -317,6 +381,30 @@ a
           width:100%
         .issueImg
           width:80%
+      .helpr
+        width:90%
+        margin:auto
+        background-color: white
+        box-shadow: 10px 20px 35px -1px rgba(0,0,0,0.75);
+      
+         
+        .processStep
+          padding:20px
+          overflow:hidden 
+
+          .projDesc
+            width:90%
+            float:left
+            padding:10px
+        .helprapp
+          .showcase
+            width:100%
+          .helprVolunteer
+            padding:0px
+            width:90%
+
+
+
 // Mobile
 @media (max-width: 640px)
   body
@@ -335,6 +423,16 @@ a
           width:100%
         form
           width:100%
+      .northerntickets
+        width: 100%
+        .slides
+          width:450px
+          margin:auto
+          .testingSlide
+            width:100%
+            padding:10px
+
+
   #simple-menu
     display: block
     float:right
@@ -365,3 +463,12 @@ a
               width:100%
             form
               width:100%
+          .northerntickets
+            width: 100%
+            .slides
+              width:420px
+              margin:auto
+              .testingSlide
+                width:100%
+                padding:10px
+
