@@ -165,7 +165,7 @@ jQuery(function($) {
             {image:'assets/images/UserTestingSlides/positiveresults.png'},
             {image:'assets/images/UserTestingSlides/participants.png'},
             {image:'assets/images/UserTestingSlides/process.png'},
-            {image:'assets/images/UserTestingSlides/script.png', url:'/assets/Script&Schedule.pdf'},
+            {image:'assets/images/UserTestingSlides/script.png', url:'http://elicia-durtnall.com/Script&Schedule.pdf'},
             {image:'assets/images/UserTestingSlides/results.png'},
             {image:'assets/images/UserTestingSlides/summary.png'},
             {image:'assets/images/UserTestingSlides/summaryCont.png'},
@@ -305,7 +305,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
        
-        body: '<p>Hi, my name is Elicia Durtnall<br></br>I aspire to be a UX Designer. I am currently in my last year at Humber College for web design and interactive media. Send me a <a href="/contact">message</a> if you would like to chat or give me a follow on twitter <a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a>. I look forward to hearing from you!</p>',
+        body: '<p>Hi, my name is Elicia Durtnall<br></br>I aspire to be a UX Designer. I am currently in my last year at Humber College for web design and interactive media.<br></br> Send me a <a href="/contact">message</a> if you would like to chat or give me a follow on twitter <a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a>. I look forward to hearing from you! <br><br> <a href="https://my.indeed.com/r/52c2d3b6798ed5c4" target="_blank">View Resume >> </a></p>',
         image: 'assets/images/elicia_durtnall.png'
       });
 
@@ -447,7 +447,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         content: '<p>Hi Everyone,<br>Thank you for checking out my website. Feel free to contact me below in whatever way is most convienent to you. If you want to give advice, share a story, or connect as a professional contact, here is all you need to reach me.<br></br>Sincerely,<br>Elicia Durtnall</p>',
-        body: '<p>cell:<a class="mobile-only" href="tel:705-627-8288">705-627-8288</a><br>email: <a href="mailto:eliciadurtnall@gmail.com?Subject=contact%20from%20website" target="_blank">eliciadurtnall@gmail.com</a><br>twitter:<a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a></p>'
+        body: '<p>Cell: <a class="mobile-only" href="tel:705-627-8288">705-627-8288</a><br>Email: <a href="mailto:eliciadurtnall@gmail.com?Subject=contact%20from%20website" target="_blank">eliciadurtnall@gmail.com</a><br>Twitter: <a href="https://twitter.com/EliciaDurtnall" target="_blank">@eliciad</a><br>LinkedIn: <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US" target="_blank">LinkedIn</a></p>'
       });
 
     },
@@ -477,9 +477,9 @@ jQuery(function($) {
   // -----------------------------
   // Navigation Links
   // -----------------------------
-$(document).delegate('a', 'click', function(e) {
-    var url = $(this).attr('href') || '#';
-    var isLocal = url.match(/^#/)
-    if(isLocal) { e.preventDefault(); App.router.navigate($(this).attr('href'), { trigger: true }); }
+$(document).delegate('a[href^="/"]', 'click', function(e) {
+    
+    e.preventDefault(); 
+    App.router.navigate($(this).attr('href'), { trigger: true }); 
   });
 });
