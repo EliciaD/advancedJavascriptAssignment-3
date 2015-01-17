@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <body>
     <div class="wrapper">
-      <header class="header"><a href="/"><img src="assets/images/logo.png">
+      <header class="header"><a href="/"><img src="assets/images/logo.png" class="logo">
           <ul class="nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
@@ -84,8 +84,6 @@
       {{#each step}}
           <div class="processStep">
             <img src="{{image}}" class="stepImg">
-            <img src="{{image2}}" class="stepImg2">
-            <img src="{{image3}}" class="stepImg3">
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
@@ -138,7 +136,6 @@
               <h3>{{ subtitle }}</h3>
               <p>{{desc}}</p>
                <img src="{{image}}" class="issueImg">
-               <img src="{{image2}}" class="issueImg">
               <div class="heuristic"><p>{{heuristic}}</p></div>
           </div>
         {{/each}}
@@ -150,15 +147,6 @@
   <script id="contact" type="text/template">
     <div class="page contact">
      <div id="wrap2">
-     <form class="email" action="/mailer.php" method="post">
-                      <p>Name</p>
-                      <input type="text" name="name" />
-                      <p>Email</p>
-                      <input type="text" name="email" />
-                      <p>Message</p>
-                      <textarea name="message"></textarea></p>
-                      <input class="send" type="submit" value="Send">
-                      </form>
       <div id="contactInfo">
       {{{ content }}}
       {{{ body }}}

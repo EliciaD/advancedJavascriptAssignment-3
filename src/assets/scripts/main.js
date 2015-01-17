@@ -116,7 +116,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         image: 'assets/images/banner.png',
-        content: '<div class="intro"><h1>Elicia Durtnall / UX Design</h1><h2>"Enthusiastic, Web Design and Interactive Media graduate. UX designer.</h2></div>'
+        content: '<div class="intro"><h1>Elicia Durtnall / UX Design</h1><h2>Enthusiastic, Web Design and Interactive Media graduate. UX designer.</h2></div>'
 
       });
 
@@ -157,19 +157,19 @@ jQuery(function($) {
       // Some page data
       this.model.set({
           testing:[
-            {image:'assets/images/UserTestingSlides/introSlide.png'},
-            {image:'assets/images/UserTestingSlides/negativeFindings.png'},
-            {image:'assets/images/UserTestingSlides/morenegative.png'},
-            {image:'assets/images/UserTestingSlides/morenegative2.png'},
-            {image:'assets/images/UserTestingSlides/faces.png'},
-            {image:'assets/images/UserTestingSlides/positiveresults.png'},
-            {image:'assets/images/UserTestingSlides/participants.png'},
-            {image:'assets/images/UserTestingSlides/process.png'},
-            {image:'assets/images/UserTestingSlides/script.png', url:'http://elicia-durtnall.com/Script&Schedule.pdf'},
-            {image:'assets/images/UserTestingSlides/results.png'},
-            {image:'assets/images/UserTestingSlides/summary.png'},
-            {image:'assets/images/UserTestingSlides/summaryCont.png'},
-            {image:'assets/images/UserTestingSlides/recommendations.png'},
+            {image:'assets/images/introSlide.png'},
+            {image:'assets/images/negativeFindings.png'},
+            {image:'assets/images/morenegative.png'},
+            {image:'assets/images/morenegative2.png'},
+            {image:'assets/images/faces.png'},
+            {image:'assets/images/positiveresults.png'},
+            {image:'assets/images/participants.png'},
+            {image:'assets/images/process.png'},
+            {image:'assets/images/script.png', url:'http://elicia-durtnall.com/Script&Schedule.pdf'},
+            {image:'assets/images/results.png'},
+            {image:'assets/images/summary.png'},
+            {image:'assets/images/summaryCont.png'},
+            {image:'assets/images/recommendations.png'},
           ] 
       });
 
@@ -213,8 +213,8 @@ jQuery(function($) {
         content:'Before Helpr high school students didn’t know where to look for volunteer hours that they need to graduate. Now with Helpr, Jobs are easily posted to the app through our website and users are able to have volunteer opportunities easily at hand. The app tracks hours for the students, so they will never be unaware of how many hours they currently have or have to check their sheet or booklet where the amount is recorded.',
         step: [
           {image:'assets/images/helpr/persona.png', title:'Persona Board', desc:'The Target audience for this app is High School Students grade 9-12 who are iphone users. There are 660, 116 English speaking high school students in Ontario, all required to find at least 40 hours of volunteer opportunities. The app will be the first iOS application to cater towards tracking and gathering volunteer hours.'},
-          {image:'assets/images/helpr/sketches.png', image2:'assets/images/helpr/wireframes.png', image3:'assets/images/helpr/mockups.png', title:'Sketches & Wireframes & Mockups', desc:'Version 1.0 Expectations, Search for volunteer jobs within your radius, Tracks complete volunteer jobs, Level progression, Achievements, Signatures, and printable forms'},
-          {image:'assets/images/helpr/paperProto.png', title: 'Wizard of Oz - Paper prototyping', desc:'What we learned from prototyping. Simple navigation layout, Rough functionality structure, Which areas need appropriate feedback, Where confusion may be in our app for the user'},
+          {image:'assets/images/helpr/sketches.png', title:'Sketches & Wireframes & Mockups', desc:'Version 1.0 (MVP) Expectations, Search for volunteer jobs, track complete volunteer hours, collect signatures, and printable forms'},
+          {image:'assets/images/helpr/paperProto.png', title: 'Wizard of Oz - Paper prototyping', desc:'What we learned from low fidelity prototyping. Simple navigation layout, Rough functionality structure, Which areas need appropriate feedback, Where confusion may be in our app for the user'},
           {image:'assets/images/helpr/proto.png', title:'Prototype', desc:'3 Use Cases: 1. Please accept the Job to mow a lawn on October 25th 2014. 2. Collect a signature for the previously accepted job to mow a lawn on October 25th 2014. 3. Send your volunteer form to a guidance counselor.'},
         ]
 
@@ -398,10 +398,10 @@ jQuery(function($) {
         title2: 'Issues',
        
         issue: [
-          { subtitle:'Global Issues', desc: '1. The logo works as the home button on certain pages, but not on all pages. It is very inconsistent. The menu changes when browsing the site to on an account page. Consistency is important to creating a user friendly website.', image:'assets/images/heuristicIssues/menu1.png', image2:'assets/images/heuristicIssues/menu2.png',heuristic:' Heuristic evaluated: Consistency and standards'},
+          { subtitle:'Global Issues', desc: '1. The logo works as the home button on certain pages, but not on all pages. It is very inconsistent. The menu changes when browsing the site to on an account page. Consistency is important to creating a user friendly website.', image:'assets/images/heuristicIssues/menu1.png', heuristic:' Heuristic evaluated: Consistency and standards'},
           { subtitle:'Page Level Issues', desc: '1. When you search an event on the home page, before the fold the first thing you see for results is irrelevant information. It is important that you strive for a minimal design. If a user searches for Nils Frahm they would like to be presented with the results for that search first. I suggest that below the results you add a “Didn’t find what you were looking for? Customize your search.” I suggest that the information about if you receive declined by fraud services messages be available elsewhere on the site or if they have received the message then be available to them then. This information is irrelevant to the search.', image:'assets/images/heuristicIssues/issue1.png', heuristic:' Heuristic evaluated: Aesthetic and minimalist design'},
           { desc: '2. The customize your search form and the homepage search does not give any indicator that the search has done anything if you make a mistake and type the artists name incorrectly, for example when searching for Nils Frahm, if you mistakenly type Nils Framh no results are shown. It is important that your site provides feedback to users so they can always be informed on what is happening. There should never be a disconnect from the user and your system. Maybe add text to say did you mean Nils Framh? or artist not found and  add a you might also like and present a list of other similar artists.', image:'assets/images/heuristicIssues/issue2.png', heuristic:'Heuristic evaluated: Visibility of system status' },
-          { desc: '3. Requested seats number must be greater than 0. Requested price types must be on the price chart. This error could be worded differently. The error message should speak the user’s language. Also the error should appear before continuing to the next page. When the add link button is selected in the shopping cart the same issue occurs. This error messages should be easily understood, indicate the problem, and introduce a solution.', image:'assets/images/heuristicIssues/issue3.png', image2:'assets/images/heuristicIssues/issue3b.png', heuristic:'Heuristic evaluated: Help users recognize, diagnose, and recover from errors'},
+          { desc: '3. Requested seats number must be greater than 0. Requested price types must be on the price chart. This error could be worded differently. The error message should speak the user’s language. Also the error should appear before continuing to the next page. When the add link button is selected in the shopping cart the same issue occurs. This error messages should be easily understood, indicate the problem, and introduce a solution.', image:'assets/images/heuristicIssues/issue3.png', heuristic:'Heuristic evaluated: Help users recognize, diagnose, and recover from errors'},
           { desc: '4. When the user is instructed to fill out a form before purchasing tickets, clicking continue without filling out all the required fields results in a list being displayed of what you are missing in an alert box. This is bad heuristics because it requires you to use recall rather than recognition when returning to the form. The user has to try to remember which fields were not filled out and how to correct it. I recommend that the missing form attributes be displayed on the page rather then in a pop up which you have to delete in order to continue.',image:'assets/images/heuristicIssues/issue4.png', heuristic:'Heuristic evaluated: Recognition rather than recall'},
           { desc: '5. On the account page there is no indicator to how far you are in the process until you get to the delivery details page. Users need to know where they are in the process at all times. If there is no indicator to where you are in the purchasing process it is likely users will abandon the process all together. Also on the account page when the user clicks continue with the form, without filling out all the required fields, the form tells you there is something wrong with yellow warning sign’s. This is very confusing. The areas incomplete should be shown in red, as yellow gives the impression it is recommended to fill out this section not a requirement. Even so it is not enough to tell the user something is wrong.  There should be a response telling the user how to fix the form on the page. I recommend that with each field incomplete the system highlight it with red and provide them with some sort of example or short explanation of how to properly fill out the area on the page. Also we can restructure the input fields to not be both vertical and horizontal. Eliminating the user needing to look both up and down, and left to right as fields could be missed.',image:'assets/images/heuristicIssues/issue5.png', heuristic:'Heuristics evaluated: Error prevention, Help and Documentation, Visibility of system status and Match between system and the real world.'},
           { desc: '6. The shopping cart performance details do not include location, which makes the user rely on recall. Also the shopping cart’s remove performance link deletes all tickets, there is no option to delete a single ticket for example if the user no longer needs 3 tickets, or they accidently chose 3 and just want one. I recommend adjusting the remove performance feature to be a remove ticket feature. With a remove ticket feature users will have the freedom to delete whichever tickets they choose.',image:'assets/images/heuristicIssues/issue6.png', heuristic:'Heuristic evaluated: Recognition rather than recall, and User control and freedom.'},

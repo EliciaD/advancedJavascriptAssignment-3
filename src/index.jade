@@ -24,7 +24,7 @@ html
 
        header.header
          a(href="/")
-          img(src='assets/images/logo.png')
+          img.logo(src='assets/images/logo.png')
 
           ul.nav
 
@@ -107,8 +107,6 @@ html
       {{#each step}}
           <div class="processStep">
             <img src="{{image}}" class="stepImg">
-            <img src="{{image2}}" class="stepImg2">
-            <img src="{{image3}}" class="stepImg3">
             <div class="projDesc">
               <h2>{{title}}</h2>
               <p>{{desc}}</p>
@@ -158,7 +156,6 @@ html
               <h3>{{ subtitle }}</h3>
               <p>{{desc}}</p>
                <img src="{{image}}" class="issueImg">
-               <img src="{{image2}}" class="issueImg">
               <div class="heuristic"><p>{{heuristic}}</p></div>
           </div>
         {{/each}}
@@ -169,15 +166,6 @@ html
   script#contact(type="text/template").
     <div class="page contact">
      <div id="wrap2">
-     <form class="email" action="/mailer.php" method="post">
-                      <p>Name</p>
-                      <input type="text" name="name" />
-                      <p>Email</p>
-                      <input type="text" name="email" />
-                      <p>Message</p>
-                      <textarea name="message"></textarea></p>
-                      <input class="send" type="submit" value="Send">
-                      </form>
       <div id="contactInfo">
       {{{ content }}}
       {{{ body }}}
